@@ -1,6 +1,8 @@
 
 # FE_ListriQu
 Frontend project ini dibangun dengan **Vue 3** dan **Vite** untuk performa tinggi dan kemudahan pengembangan.
+## Backlog Pengerjaan
+[lihat track pengerjaan saya **[ListriQu]((https://github.com/users/SufardiMadoa/projects/6))**](https://github.com/users/SufardiMadoa/projects/6)
 
 ---
 
