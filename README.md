@@ -1,58 +1,96 @@
-# FE_Listriqu
 
-This template should help get you started developing with Vue 3 in Vite.
+# FE_ListriQu
+Frontend project ini dibangun dengan **Vue 3** dan **Vite** untuk performa tinggi dan kemudahan pengembangan.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 📁 Struktur Folder
 
-## Customize configuration
+```
+src/
+├── api/           # Konfigurasi API dan request handler (axios/fetch)
+├── assets/        # Gambar, icon, dan asset statis lainnya
+├── components/    # Komponen UI reusable (form, table, modal, dsb)
+├── plugins/       # Plugin pihak ketiga yang di-*inject* ke Vue app
+├── router/        # Konfigurasi routing menggunakan vue-router
+├── services/      # Service layer untuk komunikasi API dan logic bisnis
+├── stores/        # State management (menggunakan Pinia atau Vuex)
+├── views/         # Halaman utama (Dashboard, Profile, Settings, dll)
+├── App.vue        # Komponen root aplikasi
+└── main.js        # Entry point aplikasi
+```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🛠️ Setup Proyek
 
-```sh
+### 🔧 Install Dependensi
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 🚀 Jalankan Mode Pengembangan
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+Akses: [http://localhost:5173](http://localhost:5173)
 
-```sh
+### 📦 Build untuk Produksi
+
+```bash
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### ✅ Jalankan Unit Test (Vitest)
 
-```sh
+```bash
 npm run test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+### 🔁 Jalankan End-to-End Test (Cypress)
 
-```sh
+```bash
 npm run test:e2e:dev
 ```
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+Build produksi + test e2e:
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
+```bash
 npm run build
 npm run test:e2e
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 🧹 Linting
 
-```sh
+```bash
 npm run lint
 ```
-# FE_ListriQu
+
+---
+
+## 🔧 Rekomendasi Editor
+
+Gunakan [VSCode](https://code.visualstudio.com/) dengan ekstensi:
+
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) — rekomendasi resmi Vue 3
+- Nonaktifkan Vetur jika sebelumnya aktif
+
+---
+
+## 📚 Referensi
+
+- [Vue 3 Docs](https://vuejs.org/guide/introduction.html)
+- [Vite Configuration](https://vitejs.dev/config/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [Vitest](https://vitest.dev/)
+- [Cypress](https://www.cypress.io/)
+
+---
+
+## 🧑‍💻 Dibuat oleh
+
+> Tim **ListriQu** – Frontend modern dan modular untuk sistem informasi terintegrasi.
