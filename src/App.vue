@@ -1,14 +1,28 @@
 <script setup>
-import { RouterView } from 'vue-router'
+// import { RouterView } from 'vue-router'
+// import Login from './views/authPage/Login.vue';
+// import Navbar from './views/layout/Navbar.vue';
 </script>
 
 <template>
+  <v-app>
+    <v-main>
+
+      <router-view />
 
 
-  <RouterView />
+    </v-main>
+  </v-app>
+
 </template>
+<script>
+export default {
+  name: 'App',
+}
+</script>
+<!-- <script> -->
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -70,4 +84,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->
