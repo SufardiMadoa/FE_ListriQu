@@ -14,7 +14,7 @@ export const authService = {
       username: userData.username,
       email: userData.email,
       password: userData.password,
-      roleId: userData.roleId || 1, // default role jika tidak disediakan
+      roleId: userData.roleId || 3, // default role jika tidak disediakan
     })
   },
   logout: () => {
