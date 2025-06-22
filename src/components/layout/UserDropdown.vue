@@ -76,9 +76,10 @@ export default {
                 try {
                     await authService.logout()
                     // Clear any other user-related data from localStorage if needed
-                    localStorage.removeItem('token') // Or your specific token key
+                    localStorage.clear();
+                    // Or your specific token key
                     // Redirect to login page or home page
-                    router.push({ name: 'Login' }) // Ensure you have a route named 'Login'
+                    router.replace({ name: 'Login' }) // Ensure you have a route named 'Login'
                 } catch (error) {
                     console.error('Logout failed:', error)
                     // Optionally, show an error message to the user
