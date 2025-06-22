@@ -3,11 +3,8 @@
         <div class="max-w-md w-full space-y-8">
             <div class="bg-white p-8 rounded-lg shadow-md">
                 <!-- Logo -->
-                <div class="text-center mb-8">
-                    <div class="text-3xl font-bold mb-2">
-                        <span class="text-blue-600">Listri</span><span class="text-orange-400">Qu</span>
-                    </div>
-                    <div class="text-sm text-gray-500">ENERGY DIGITAL ECOSYSTEM</div>
+                <div class="text-left mb-8">
+                    <img src="/public/logo.png" width="180">
                 </div>
 
                 <!-- Welcome Text -->
@@ -24,7 +21,7 @@
                             <label class="block text-sm font-medium text-gray-700 mb-1">Username</label>
                             <input type="text" v-model="form.username"
                                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="muhammad.fakhruroji" required>
+                                placeholder="Input username" required>
                         </div>
 
                         <!-- Password -->
@@ -33,7 +30,7 @@
                             <div class="relative">
                                 <input :type="showPassword ? 'text' : 'password'" v-model="form.password"
                                     class="w-full px-3 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    placeholder="••••••••••" required>
+                                    placeholder="Input your password" required>
                                 <button type="button" @click="showPassword = !showPassword"
                                     class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600">
                                     <svg v-if="!showPassword" class="h-5 w-5" fill="none" stroke="currentColor"
@@ -57,9 +54,10 @@
                         </div>
 
                         <!-- Forgot Password -->
-                        <div class="text-right">
+                        <div class="text-left">
+                            <span>Forgot your password?</span>
                             <a href="#" class="text-sm text-blue-600 hover:text-blue-500">
-                                Forgot your password? Click here
+                                Click here
                             </a>
                         </div>
 
@@ -127,7 +125,7 @@ export default {
                 api.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
 
                 // Arahkan ke dashboard (ganti path sesuai dengan role kalau mau)
-                router.push('/admin')
+                router.push('/dashboard')
             } catch (error) {
                 if (error.response && error.response.data && error.response.data.message) {
                     errorMessage.value = error.response.data.message
@@ -138,7 +136,6 @@ export default {
                 loading.value = false
             }
         }
-
         return {
             form,
             loading,
