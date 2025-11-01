@@ -13,7 +13,8 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      // ini perubahan master
+      // ini perubahan master 2
+      // perubahan master lagi
     },
     {
       path: '/register',
